@@ -17,18 +17,23 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
+import { IoLogoGithub } from 'react-icons/io5'
 
-const LinkItem = ({ href, path, children}) => {
+const LinkItem = ({ href, path, target, children, ...props}) => {
     const active = path == href
-    const inactiveColor = useColorModeValue('gray200', 'whiteAlpha900')
+    const inactiveColor = useColorModeValue('gray.800', 'whiteAlpha.900')
+    const activeBg = useColorModeValue('#3182CE', '#90CDF4')
+    const activeColor = useColorModeValue('whiteAlpha.900', 'gray.800')
     return ( 
-        <NextLink href= {href}>
+        <NextLink href= {href} passHref>
             <Link
                 p={2}
-                bg={active ? 'glassTeal': undefined}
-                color={active ? '#202023' : inactiveColor}
+                bg={active ? activeBg : undefined}
+                color={active ? activeColor : inactiveColor}
+                target={target}
+                {...props}
             >
-                 {children}
+                {children}
             </Link>
         </NextLink>
     )
@@ -60,6 +65,7 @@ const Navbar = props => {
                         <Logo/>
                     </Heading>
                 </Flex>
+                
                 <Stack
                 direction={{base:'column', md:'row'}}
                 display={{base:'none', md:'flex'}}
@@ -74,10 +80,17 @@ const Navbar = props => {
                     <LinkItem href="/contact" path={path}>
                         Contact
                     </LinkItem>
-                    <LinkItem href="/ij" path={path}> 
+                    <LinkItem
+                    target="_blank"
+                    href="https://github.com/RaphaelStn/NextPortfolio"
+                    display="inline-flex"
+                    alignItems="center"
+                    style={{ gap: 4 }}
+                    pl={2}
+                    >
+                        <IoLogoGithub/>
                         View Source
                     </LinkItem> 
-                    {/* Add github here */}
                 </Stack>
                 <Box flex={1} align="right">
                     <ThemeToggleButton/>
