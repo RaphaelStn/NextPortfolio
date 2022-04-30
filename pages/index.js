@@ -4,7 +4,7 @@ import NextLink from 'next/link'
 import Layout from "../components/layouts/article"
 import Section from "../components/section"
 import Paragraph from "../components/parapraph"
-import { BioSection, BioYear } from "../components/Bio"
+import { BioSection, BioYear } from "../components/bio"
 
 
 const Page = () => {
