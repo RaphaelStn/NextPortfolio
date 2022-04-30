@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
+    "start": "next start",
     "build": "next build && next export"
   },
   "keywords": [],
@@ -20,6 +21,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
+    "react-scripts": "^5.0.1",
     "three": "^0.139.2"
   }
 }
