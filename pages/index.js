@@ -73,8 +73,8 @@ const Page = () => {
                         Bio
                     </Heading>
                     <BioSection><BioYear>1994</BioYear>Born in Enghiens-les-bains, France.</BioSection>
-                    <BioSection><BioYear>2013</BioYear>Obtained a Baccalauréat Scientifique.</BioSection>
-                    <BioSection><BioYear>2015</BioYear>Butcher 🥩 in various shops in Le Havre and Paris</BioSection>
+                    <BioSection><BioYear>2013</BioYear>Obtained a 'Baccalauréat Scientifique'.</BioSection>
+                    <BioSection><BioYear>2015</BioYear>Butcher 🥩 in various shops in Le Havre and Paris.</BioSection>
                     <BioSection><BioYear>2022</BioYear>Web Developer diploma obtained thanks to&nbsp; 
                         <NextLink href="https://openclassrooms.com/" passHref >
                             <Link target="_blank">
@@ -83,14 +83,14 @@ const Page = () => {
                         </NextLink>
                         .
                     </BioSection>
-                    <BioSection><BioYear>2022</BioYear>Independant Web Developer</BioSection>
+                    <BioSection><BioYear>2022</BioYear>Independent Web Developer.</BioSection>
                 </Section>
                 <Section delay={0.3}>
                     <Heading as="h3" variant="section-title">
                         I ♥ 
                     </Heading>
                     <Paragraph>
-                        Art, Music, Aquariums & Plants
+                        Art, Music, Games, Aquariums & Plants.
                     </Paragraph>
                 </Section>
                 <Heading as="h3" variant="section-title">

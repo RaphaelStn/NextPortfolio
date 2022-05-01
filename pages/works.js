@@ -8,6 +8,7 @@ import webagency from '../public/images/siteshot/webagency.jpeg'
 import heroesloop from '../public/images/siteshot/heroesloop.jpeg'
 import spawnloop from '../public/images/siteshot/spawnloop.jpeg'
 import vscode from '../public/images/siteshot/vscode.jpeg'
+import placeholder from '../public/images/siteshot/placeholder.png'
 
 const Works = () => {
     return (
@@ -19,13 +20,18 @@ const Works = () => {
 
                 <SimpleGrid columns={[1,1,2]} gap={6}>
                 <Section>
+                        <GridItem href="/" title="MyPortfolio" thumbnail={placeholder}> 
+                            Portfolio created with Next.js, ChakraUI, FramerMotion and Three.js for the the voxel animation.
+                        </GridItem>
+                    </Section>
+                    <Section>
                         <GridItem href="https://vscode.raphael-stacino.fr/?" title="Vscode Portfolio" thumbnail={vscode}> 
-                            Portfolio based on the IDE Visual Studio Code. Made with PHP, Twig and Sass
+                            Portfolio based on the IDE Visual Studio Code. Made with PHP, Twig and Sass.
                         </GridItem>
                     </Section>
                     <Section>
                         <GridItem href="https://whattodo.raphael-stacino.fr/?" title="WhatToDo" thumbnail={whattodo}> 
-                            Simple website to help see and choose between popular recent movies/shows. Made with PHP, Twig and Sass
+                            Simple website to help see and choose between popular recent movies/shows. Made with PHP, Twig and Sass.
                         </GridItem>
                     </Section>
                     <Section>
@@ -35,7 +41,7 @@ const Works = () => {
                     </Section>
                     <Section delay={0.1}>
                         <GridItem href="https://webagency.raphael-stacino.fr/?" title="WebAgency" thumbnail={webagency}> 
-                            Template website for html/css work, my first project.
+                            Template website in HTML/CSS, my first project.
                         </GridItem>
                     </Section>
                 </SimpleGrid>
@@ -43,13 +49,13 @@ const Works = () => {
                 <Section delay={0.2}>
                     <Divider my={6} bg={useColorModeValue('grey', '')}/>
                     <Heading as="h3" fontSize={20} mb={4}>
-                        Personnal Projects
+                        Personal Projects
                     </Heading>
                 </Section>
                 <SimpleGrid columns={[1,1,2]} gap={6}>  
                     <Section delay={0.2}>
                         <GridItem href="https://heroesloop.raphael-stacino.fr/?" title="HeroesLoop" thumbnail={heroesloop}> 
-                            A Javascript demo for basic movement with keyboard, collision system, and gravity.
+                            A Javascript demo for basic movement with keyboard, collision system, and gravity. No mobile support yet.
                         </GridItem>
                     </Section>
                     <Section delay={0.2}>
