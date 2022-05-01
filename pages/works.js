@@ -1,12 +1,13 @@
 import { Container, Heading, SimpleGrid, Divider, useColorModeValue } from '@chakra-ui/react' 
 import Section from '../components/section'
 import Layout from "../components/layouts/article"
-import { GridItem, GridItemStyle } from '../components/grid-item'
+import { GridItem } from '../components/grid-item'
 import whattodo from '../public/images/siteshot/whattodo.jpeg'
 import ireki from '../public/images/siteshot/wordpress.jpeg'
 import webagency from '../public/images/siteshot/webagency.jpeg'
 import heroesloop from '../public/images/siteshot/heroesloop.jpeg'
 import spawnloop from '../public/images/siteshot/spawnloop.jpeg'
+import vscode from '../public/images/siteshot/vscode.jpeg'
 
 const Works = () => {
     return (
@@ -17,9 +18,14 @@ const Works = () => {
                 </Heading>
 
                 <SimpleGrid columns={[1,1,2]} gap={6}>
+                <Section>
+                        <GridItem href="https://vscode.raphael-stacino.fr/?" title="Vscode Portfolio" thumbnail={vscode}> 
+                            Portfolio based on the IDE Visual Studio Code. Made with PHP, Twig and Sass
+                        </GridItem>
+                    </Section>
                     <Section>
                         <GridItem href="https://whattodo.raphael-stacino.fr/?" title="WhatToDo" thumbnail={whattodo}> 
-                            Simple website to help see and choose between popular recent movies/shows. Written in PHP/Twig for back-end, and HTML/Sass/JS for the front-end.
+                            Simple website to help see and choose between popular recent movies/shows. Made with PHP, Twig and Sass
                         </GridItem>
                     </Section>
                     <Section>

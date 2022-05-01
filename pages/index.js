@@ -1,10 +1,22 @@
-import { Container, Box, Heading, Image, useColorModeValue, Button, Link } from "@chakra-ui/react"
+import { 
+    Container, 
+    Box, 
+    Heading, 
+    Image, 
+    useColorModeValue, 
+    Button, 
+    Link, 
+    List, 
+    ListItem, 
+    Icon 
+} from "@chakra-ui/react"
 import { ChevronRightIcon } from "@chakra-ui/icons"
 import NextLink from 'next/link'
 import Layout from "../components/layouts/article"
 import Section from "../components/section"
 import Paragraph from "../components/parapraph"
 import { BioSection, BioYear } from "../components/bio"
+import { IoLogoLinkedin, IoMail, IoLogoGithub} from 'react-icons/io5'
 
 
 const Page = () => {
@@ -80,6 +92,47 @@ const Page = () => {
                     <Paragraph>
                         Art, Music, Aquariums & Plants
                     </Paragraph>
+                </Section>
+                <Heading as="h3" variant="section-title">
+                    Contacts
+                </Heading>
+
+                <Section>
+                    <List>
+                    <ListItem>
+                            <Link href="mailto:raphaelstacino@gmail.com">
+                                <Button
+                                variant="ghost"
+                                colorScheme="blue"
+                                leftIcon={<Icon as ={IoMail} />}
+                                >
+                                    raphaelstacino@gmail.com
+                                </Button>
+                            </Link>
+                        </ListItem>
+                        <ListItem>
+                            <Link href="https://github.com/RaphaelStn" target="_blank">
+                                <Button
+                                variant="ghost"
+                                colorScheme="blue"
+                                leftIcon={<Icon as ={IoLogoGithub} />}
+                                >
+                                    @raphaelstn
+                                </Button>
+                            </Link>
+                        </ListItem>
+                        <ListItem>
+                            <Link href="https://www.linkedin.com/in/raphaël-stacino-b0b814194/" target="_blank">
+                                <Button
+                                variant="ghost"
+                                colorScheme="blue"
+                                leftIcon={<Icon as ={IoLogoLinkedin} />}
+                                >
+                                    Raphaël Stacino
+                                </Button>
+                            </Link>
+                        </ListItem>
+                    </List>
                 </Section>
             </Container>
         </Layout>
