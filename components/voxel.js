@@ -2,7 +2,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import { Box, Spinner } from "@chakra-ui/react";
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
-import {LoadGLTFModel, loadGLTFModel} from '../libs/model'
+import {LoadGLTFModel } from '../libs/model'
 
 function easeOutCirc(x) {
     return Math.sqrt(1- Math.pow(x - 1, 4))
@@ -64,7 +64,7 @@ const Voxel = () => {
             controls.target = target
             setControls(controls)
 
-            LoadGLTFModel(scene, '/model.glb', {receiveShadow:false, castShadow:false}).then(()=> {
+            LoadGLTFModel(scene, '/desk.glb', {receiveShadow:false, castShadow:false}).then(()=> {
                 animate()
                 setLoading(false)
             })
