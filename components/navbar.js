@@ -101,7 +101,7 @@ const Navbar = props => {
                                     <MenuItem as={Link}>Works</MenuItem>
                                 </NextLink>
                                 <NextLink href="https://github.com/RaphaelStn/NextPortfolio" passHref target="_blank">
-                                    <MenuItem as={Link}>View Source</MenuItem>
+                                    <MenuItem as={Link}> <IoLogoGithub/>View Source</MenuItem>
                                 </NextLink>
                             </MenuList>
                         </Menu>
