@@ -24,15 +24,15 @@ const Voxel = () => {
     const [scene] = useState(new THREE.Scene())
     const [_controls, setControls] = useState()
 
-    const handleWindowResize = useCallback(()=> {
-        const {current: container} = refContainer
+    const handleWindowResize = useCallback(() => {
+        const { current: container } = refContainer
         if (container && renderer) {
-            const scW = container.clientWidth
-            const scH = container.clientHeight
-
-            renderer.setSize(scW, scH)
+          const scW = container.clientWidth
+          const scH = container.clientHeight
+    
+          renderer.setSize(scW, scH)
         }
-    }, [renderer])
+      }, [renderer])
 
     useEffect(() => {
         const {current: container} = refContainer
@@ -108,8 +108,8 @@ const Voxel = () => {
         m="auto"
         mt={['-20px', '-60px', '-120px']}
         mb={['-40px', '-140px', '-200px']}
-        w= {['200', '480', '640']}
-        h= {['200', '480', '640']}
+        w={[280, 480, 640]}
+        h={[280, 480, 640]}
         position="relative"
         >
             {loading && (
