@@ -16,7 +16,11 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
+import LocaleToggleButton from './locale-toggle-button'
 import { IoLogoGithub } from 'react-icons/io5'
+import { useRouter } from 'next/router'
+
+
 
 const LinkItem = ({ href, path, target, children, ...props}) => {
     const active = path == href
@@ -25,7 +29,7 @@ const LinkItem = ({ href, path, target, children, ...props}) => {
     const activeColor = useColorModeValue('whiteAlpha.900', 'gray.800')
     return ( 
         <NextLink href= {href} passHref>
-            <Link
+            <Link 
                 p={2}
                 bg={active ? activeBg : undefined}
                 color={active ? activeColor : inactiveColor}
@@ -40,7 +44,7 @@ const LinkItem = ({ href, path, target, children, ...props}) => {
 
 const Navbar = props => {
     const { path } = props
-
+    const {locale} = useRouter()
     return (
         <Box
         position= "fixed"
@@ -73,7 +77,7 @@ const Navbar = props => {
                 flexGrow={1}
                 mt={{base: 4, md: 0}}
                 >
-                    <LinkItem href="/works" path={path}>
+                    <LinkItem href="/works" path={path} locale={locale}>
                         Works
                     </LinkItem>
                     <LinkItem
@@ -90,14 +94,15 @@ const Navbar = props => {
                 </Stack>
                 <Box flex={1} align="right">
                     <ThemeToggleButton/>
+                    <LocaleToggleButton/>
                     <Box ml={2} display={{base: 'inline-block', md:'none'}}>
                         <Menu>
                             <MenuButton as={IconButton} icon={<HamburgerIcon/>} variant="outline" aria-label="Options"/>
                             <MenuList>
-                                <NextLink href="/" passHref>
+                                <NextLink href="/" passHref locale={locale}>
                                     <MenuItem as={Link}>About</MenuItem>
                                 </NextLink>
-                                <NextLink href="/works" passHref>
+                                <NextLink href="/works" passHref locale={locale}>
                                     <MenuItem as={Link}>Works</MenuItem>
                                 </NextLink>
                                 <NextLink href="https://github.com/RaphaelStn/NextPortfolio" passHref target="_blank">
