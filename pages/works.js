@@ -9,8 +9,12 @@ import heroesloop from '../public/images/siteshot/heroesloop.jpeg'
 import spawnloop from '../public/images/siteshot/spawnloop.jpeg'
 import vscode from '../public/images/siteshot/vscode.jpeg'
 import placeholder from '../public/images/siteshot/placeholder.png'
+import workPosts from '../public/locales/workPosts.json'
+import { useRouter } from "next/router"
 
 const Works = () => {
+    const { locale } = useRouter()
+    console.log({locale})
     return (
         <Layout>
             <Container>
@@ -21,7 +25,9 @@ const Works = () => {
                 <SimpleGrid columns={[1,1,2]} gap={6}>
                 <Section>
                         <GridItem href="/" title="MyPortfolio" thumbnail={placeholder}> 
-                            Portfolio created with Next.js, ChakraUI, FramerMotion and Three.js for the the voxel animation.
+                            {workPosts.MyPortfolio.filter(p => p.locale === locale).map((MyPortfolio) => {
+                                return MyPortfolio.content
+                            })} 
                         </GridItem>
                     </Section>
                     <Section>

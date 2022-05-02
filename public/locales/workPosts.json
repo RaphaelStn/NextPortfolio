@@ -1,0 +1,22 @@
+{
+    "MyPortfolio": [
+        {
+            "locale": "fr",
+            "content":"Portfolio crée avec Next.js, ChakraUI, FramerMotion et Three.js pour l'animation voxel"
+        },
+        {
+            "locale": "en",
+            "content":"Portfolio created with Next.js, ChakraUI, FramerMotion and Three.js for the voxel animation."
+        }
+    ],
+    "Vscode": [
+        {
+            "locale": "fr",
+            "content":"Portfolio basé sur l'IDE Visual Studio Code. Crée à l'aide de PHP, Twig, et Sass."
+        },
+        {
+            "locale": "en",
+            "content":"Portfolio based on the IDE Visual Studio Code. Made with PHP, Twig and Sass."
+        }
+    ]
+}

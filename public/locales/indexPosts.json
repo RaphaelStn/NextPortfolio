@@ -1,85 +1,85 @@
 {
     "intro": [
         {
-            "locale": "en-US",
+            "locale": "en",
             "content": "Hello, i'm a full-stack developer based in France"
         },
         {
-            "locale": "fr-FR",
-            "content": "Bonjour, je suis développeur full-stack en France"
+            "locale": "fr",
+            "content": "Bonjour, je suis développeur full-stack"
         }
     ],
     "work": [
         {
-            "locale": "en-US", 
+            "locale": "en", 
             "title": "Work",
             "content": "Raphaël is a french full-stack developer based near Paris. You can visit my portfolio to see my work, every source code is available free to use on Github. Working front-end with Javascript, React or Next, HTML and Sass, and back-end with Node.js, Express.js, PHP/Twig, MySql, MongoDB."
         },
         {
-            "locale": "fr-FR", 
+            "locale": "fr", 
             "title": "A propos",
-            "content": "Raphaël est un développeur full-stack situé près de Paris. Vous pouvez visiter mon portfolio pour retrouver mes projets, chaque code source est disponible gratuitement sur mon GitHub. Les langues utilisés sur le front-end sont React.js, Next.js ainsi que HTML, Sass, Javascript et back-end avec Node.js, Express.js, PHP/Twig, MySql, MongoDB."
+            "content": "Raphaël est un développeur full-stack situé près de Paris. Vous pouvez visiter mon portfolio pour retrouver mes projets, chaque code source est disponible gratuitement sur GitHub. Mes languages utilisés pour le front-end sont React.js, Next.js ainsi que HTML, Sass, Javascript et back-end avec Node.js, Express.js, PHP/Twig, MySql, MongoDB."
         }
     ],
     "bio": [
         {
-            "locale": "en-US", 
+            "locale": "en", 
             "title": "1994",
             "content": "Born in Enghien-Les-Bains, France"
         },         
         {
-            "locale": "fr-FR", 
+            "locale": "fr", 
             "title": "1994",
             "content": "Né à Enghien-Les-Bains, France"
         },
         {
-            "locale": "en-US", 
+            "locale": "en", 
             "title": "2013",
             "content": "Obtained a 'Baccalauréat Scientifique'."
         },
         {
-            "locale": "fr-FR", 
+            "locale": "fr", 
             "title": "2013",
             "content": "Obtient le Baccalauréat Scientifique."
         },
         {
-            "locale": "en-US", 
+            "locale": "en", 
             "title": "2015",
             "content": "Butcher 🥩 in various shops in Le Havre and Paris."
         },
         {
-            "locale": "fr-FR", 
+            "locale": "fr", 
             "title": "2015",
             "content": "Boucher 🥩 dans différentes boutiques au Havre et à Paris."
         },
         {
-            "locale": "en-US", 
+            "locale": "en", 
             "title": "2022.1",
             "content": "Web Developer diploma obtained thanks to OpenClassrooms."
         },
         {
-            "locale": "fr-FR", 
+            "locale": "fr", 
             "title": "2022.1",
-            "content": "Diplôme de web développeur obtenu grâce à OpenClassrooms."
+            "content": "Diplôme de développeur Web obtenu grâce à OpenClassrooms."
         },
         {
-            "locale": "en-US", 
+            "locale": "en", 
             "title": "2022.2",
             "content": "Independent Web Developer."
         },
         {
-            "locale": "fr-FR", 
+            "locale": "fr", 
             "title": "2022.2",
             "content": "Développeur Web Indépendant"
         }
     ],
     "love": [
         {
-            "locale": "en-US", 
+            "locale": "en", 
             "content": "Art, Music, Games, Aquariums & Plants."
         },
         {
-            "locale": "fr-FR", 
+            "locale": "fr", 
             "content": "Art, Musique, Jeux, Aquariums & Plantes"
         }
     ]
