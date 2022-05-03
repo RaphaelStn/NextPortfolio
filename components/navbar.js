@@ -19,6 +19,7 @@ import ThemeToggleButton from './theme-toggle-button'
 import LocaleToggleButton from './locale-toggle-button'
 import { IoLogoGithub } from 'react-icons/io5'
 import { useRouter } from 'next/router'
+import navPosts from '../public/locales/navPosts.json'
 
 
 
@@ -78,7 +79,9 @@ const Navbar = props => {
                 mt={{base: 4, md: 0}}
                 >
                     <LinkItem href="/works" path={path} locale={locale}>
-                        Works
+                        {navPosts.Works.filter(p => p.locale === locale).map((works) => {
+                            return works.content
+                        })} 
                     </LinkItem>
                     <LinkItem
                     target="_blank"
@@ -89,7 +92,9 @@ const Navbar = props => {
                     pl={2}
                     >
                         <IoLogoGithub/>
-                        View Source
+                        {navPosts.Source.filter(p => p.locale === locale).map((sources) => {
+                                            return sources.content
+                                        })} 
                     </LinkItem> 
                 </Stack>
                 <Box flex={1} align="right">
@@ -100,13 +105,25 @@ const Navbar = props => {
                             <MenuButton as={IconButton} icon={<HamburgerIcon/>} variant="outline" aria-label="Options"/>
                             <MenuList>
                                 <NextLink href="/" passHref locale={locale}>
-                                    <MenuItem as={Link}>About</MenuItem>
+                                    <MenuItem as={Link}>
+                                        {navPosts.Home.filter(p => p.locale === locale).map((homes) => {
+                                            return homes.content
+                                        })} 
+                                    </MenuItem>
                                 </NextLink>
                                 <NextLink href="/works" passHref locale={locale}>
-                                    <MenuItem as={Link}>Works</MenuItem>
+                                    <MenuItem as={Link}>                        
+                                        {navPosts.Works.filter(p => p.locale === locale).map((works) => {
+                                            return works.content
+                                        })} 
+                                    </MenuItem>
                                 </NextLink>
                                 <NextLink href="https://github.com/RaphaelStn/NextPortfolio" passHref target="_blank">
-                                    <MenuItem as={Link}> <IoLogoGithub/>View Source</MenuItem>
+                                    <MenuItem as={Link}> <IoLogoGithub/>
+                                        {navPosts.Source.filter(p => p.locale === locale).map((sources) => {
+                                            return sources.content
+                                        })} 
+                                    </MenuItem>
                                 </NextLink>
                             </MenuList>
                         </Menu>

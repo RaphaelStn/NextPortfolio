@@ -1,0 +1,42 @@
+{
+    "Works": [
+        {
+            "locale": "fr",
+            "content":"Projets"
+        },
+        {
+            "locale": "en",
+            "content":"Works"
+        }
+    ],
+    "Home": [
+        {
+            "locale": "fr",
+            "content":"Accueil"
+        },
+        {
+            "locale": "en",
+            "content":"Home"
+        }
+    ],
+    "Source": [
+        {
+            "locale": "fr",
+            "content":"Code Source"
+        },
+        {
+            "locale": "en",
+            "content":"View Source"
+        }
+    ],
+    "lang": [
+        {
+            "locale": "fr",
+            "content":"en"
+        },
+        {
+            "locale": "en",
+            "content":"fr"
+        }
+    ]
+}
