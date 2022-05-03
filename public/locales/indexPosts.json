@@ -2,23 +2,23 @@
     "intro": [
         {
             "locale": "en",
-            "content": "Hello, i'm a full-stack developer based in France"
+            "content": "Hello. I'm a Full-stack Developer based in France"
         },
         {
             "locale": "fr",
-            "content": "Bonjour, je suis développeur full-stack"
+            "content": "Bonjour. Je suis un Développeur Full-stack à Paris"
         }
     ],
     "work": [
         {
             "locale": "en", 
             "title": "Work",
-            "content": "Raphaël is a french full-stack developer based near Paris. You can visit my portfolio to see my work, every source code is available free to use on Github. Working front-end with Javascript, React or Next, HTML and Sass, and back-end with Node.js, Express.js, PHP/Twig, MySql, MongoDB."
+            "content": "Full-stack developer based near Paris, you can visit my portfolio to see my work, every source code is available free to use on Github. Working front-end with React.js,  Next.js, and also HTML, Sass, Javascript and back-end with Node.js, Express.js, PHP/Twig, MySql, MongoDB."
         },
         {
             "locale": "fr", 
             "title": "A propos",
-            "content": "Raphaël est un développeur full-stack situé près de Paris. Vous pouvez visiter mon portfolio pour retrouver mes projets, chaque code source est disponible gratuitement sur GitHub. Mes languages utilisés pour le front-end sont React.js, Next.js ainsi que HTML, Sass, Javascript et back-end avec Node.js, Express.js, PHP/Twig, MySql, MongoDB."
+            "content": "Développeur Fullstack situé près de Paris, vous pouvez visiter mon portfolio pour retrouver mes projets, chaque code source est disponible gratuitement sur GitHub. Mes languages utilisés pour le front-end sont React.js, Next.js ainsi que HTML, Sass, Javascript et pour le back-end, Node.js, Express.js, PHP, Twig, MySql, MongoDB."
         }
     ],
     "bio": [
