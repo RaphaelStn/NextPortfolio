@@ -1,4 +1,4 @@
-import { Button, useColorModeValue } from "@chakra-ui/react"
+import { Image, Button } from "@chakra-ui/react"
 import { AnimatePresence, motion } from "framer-motion"
 import Link  from "next/link"
 import {useRouter} from 'next/router'
@@ -12,8 +12,8 @@ const LocaleToggleButton = () => {
         }))
     l = l.replace("[", "")
     l = l.replace("]", "")
-    l = l.replace(`"`, "")
-    l = l.replace(`"`, "")
+    l = l.replaceAll(`"`, "")
+
     return (
         <AnimatePresence exitBeforeEnter initial={false}>
             <motion.div 
@@ -24,11 +24,19 @@ const LocaleToggleButton = () => {
             transition={{duration:0.2}}
             >
                 <Link href={asPath} locale={l}>
-                    <a>
-                        {navPosts.lang.filter(p => p.locale === locale).map((langs) => {
-                            return langs.content
-                        })}
-                    </a>
+                    <Button
+                    width="40px"
+                    height="40px"
+                    mr="10px"
+                    >
+                        <Image 
+                        src={`/images/${l}.png`}
+                        maxWidth="20px"
+                        wrap="wrap"
+                        align="center"
+                        display="inline-block"
+                        />
+                    </Button> 
                 </Link>
             </motion.div>
         </AnimatePresence>

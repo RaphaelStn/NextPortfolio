@@ -19,7 +19,9 @@ const Works = () => {
         <Layout>
             <Container>
                 <Heading as="h3" fontSize={20} mb={4}>
-                    Works
+                    {workPosts.title.filter(p => p.locale === locale).map((title) => {
+                        return title.content
+                    })} 
                 </Heading>
 
                 <SimpleGrid columns={[1,1,2]} gap={6}>
@@ -32,22 +34,30 @@ const Works = () => {
                     </Section>
                     <Section>
                         <GridItem href="https://vscode.raphael-stacino.fr/?" title="Vscode Portfolio" thumbnail={vscode}> 
-                            Portfolio based on the IDE Visual Studio Code. Made with PHP, Twig and Sass.
+                            {workPosts.Vscode.filter(p => p.locale === locale).map((vscode) => {
+                                return vscode.content
+                            })} 
                         </GridItem>
                     </Section>
                     <Section>
                         <GridItem href="https://whattodo.raphael-stacino.fr/?" title="WhatToDo" thumbnail={whattodo}> 
-                            Simple website to help see and choose between popular recent movies/shows. Made with PHP, Twig and Sass.
+                            {workPosts.Whattodo.filter(p => p.locale === locale).map((whattodo) => {
+                                return whattodo.content
+                            })} 
                         </GridItem>
                     </Section>
                     <Section>
                         <GridItem href="https://ireki.raphael-stacino.fr/?" title="Ireki" thumbnail={ireki}> 
-                            Wordpress based website.
+                            {workPosts.Ireki.filter(p => p.locale === locale).map((ireki) => {
+                                return ireki.content
+                            })} 
                         </GridItem>
                     </Section>
                     <Section delay={0.1}>
                         <GridItem href="https://webagency.raphael-stacino.fr/?" title="WebAgency" thumbnail={webagency}> 
-                            Template website in HTML/CSS, my first project.
+                            {workPosts.Webagency.filter(p => p.locale === locale).map((webagency) => {
+                                return webagency.content
+                            })} 
                         </GridItem>
                     </Section>
                 </SimpleGrid>
@@ -55,18 +65,24 @@ const Works = () => {
                 <Section delay={0.2}>
                     <Divider my={6} bg={useColorModeValue('grey', '')}/>
                     <Heading as="h3" fontSize={20} mb={4}>
-                        Personal Projects
+                        {workPosts.ptitle.filter(p => p.locale === locale).map((ptitle) => {
+                            return ptitle.content
+                        })} 
                     </Heading>
                 </Section>
                 <SimpleGrid columns={[1,1,2]} gap={6}>  
                     <Section delay={0.2}>
                         <GridItem href="https://heroesloop.raphael-stacino.fr/?" title="HeroesLoop" thumbnail={heroesloop}> 
-                            A Javascript demo for basic movement with keyboard, collision system, and gravity. No mobile support yet.
+                            {workPosts.Heroesloop.filter(p => p.locale === locale).map((heroesloop) => {
+                                return heroesloop.content
+                            })} 
                         </GridItem>
                     </Section>
                     <Section delay={0.2}>
                         <GridItem href="https://spawnloop.raphael-stacino.fr/?" title="SpawnLoop" thumbnail={spawnloop}> 
-                            A simple game with Javascript.
+                            {workPosts.Spawnloop.filter(p => p.locale === locale).map((spawnloop) => {
+                                return spawnloop.content
+                            })} 
                         </GridItem>
                     </Section>
                 </SimpleGrid>
