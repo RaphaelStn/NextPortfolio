@@ -13,12 +13,12 @@
         {
             "locale": "en", 
             "title": "Work",
-            "content": "Full-stack developer based near Paris, you can visit my portfolio to see my work, every source code is available free to use on Github. Working front-end with React.js,  Next.js, and also HTML, Sass, Javascript and back-end with Node.js, Express.js, PHP/Twig, MySql, MongoDB."
+            "content": "Full-stack developer based near Paris, you can visit my portfolio to see my work, every source code is available free to use on Github. Working front-end with React.js,  Next.js, and also HTML, Sass or Javascript and back-end with Node.js, Express.js, PHP, Twig, MySql, MongoDB."
         },
         {
             "locale": "fr", 
-            "title": "A propos",
-            "content": "Développeur Fullstack situé près de Paris, vous pouvez visiter mon portfolio pour retrouver mes projets, chaque code source est disponible gratuitement sur GitHub. Mes languages utilisés pour le front-end sont React.js, Next.js ainsi que HTML, Sass, Javascript et pour le back-end, Node.js, Express.js, PHP, Twig, MySql, MongoDB."
+            "title": "À propos",
+            "content": "Développeur Fullstack situé près de Paris, vous pouvez visiter mon portfolio pour retrouver mes projets, chaque code source est disponible gratuitement sur GitHub. Les languages utilisés pour le front-end sont React.js, Next.js ainsi que HTML, Sass or Javascript et pour le back-end, Node.js, Express.js, PHP, Twig, MySql, MongoDB."
         }
     ],
     "bio": [

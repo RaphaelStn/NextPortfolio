@@ -2,7 +2,7 @@
     "MyPortfolio": [
         {
             "locale": "fr",
-            "content":"Portfolio crée avec Next.js - ChakraUI - FramerMotion et Three.js pour l'animation voxel"
+            "content":"Portfolio créé avec Next.js - ChakraUI - FramerMotion et Three.js pour l'animation voxel"
         },
         {
             "locale": "en",
@@ -22,11 +22,11 @@
     "Whattodo": [
         {
             "locale": "fr",
-            "content":"Simple site pour voir et choisir parmis les films/séries populaires récentes. Crée à l'aide de PHP - Twig - Sass"
+            "content":"Simple site pour voir et choisir parmi les films et séries populaires récentes. Créé à l'aide de PHP - Twig - Sass"
         },
         {
             "locale": "en",
-            "content":"Simple website to help see and choose between popular recent movies/shows. Made with PHP - Twig - Sass"
+            "content":"Simple website to help see and choose between popular recent movies and shows. Made with PHP - Twig - Sass"
         }
     ],
     "Ireki": [
@@ -52,11 +52,11 @@
     "Heroesloop": [
         {
             "locale": "fr",
-            "content":"Démo Javascript, mouvement basique au clavier, collisions, et gravité. Pas de support mobile"
+            "content":"Démo Javascript, mouvement basique au clavier, des collisions, et  avec gravité. Pas de support mobile pour l'instant"
         },
         {
             "locale": "en",
-            "content":"A Javascript demo for basic movement with keyboard, collision system, and gravity. No mobile support yet"
+            "content":"A Javascript demo for basic movement with keyboard, a collision system, and with gravity. No mobile support yet"
         }
     ],
     "Spawnloop": [
@@ -82,7 +82,7 @@
     "ptitle": [
         {
             "locale": "fr",
-            "content":"Autre"
+            "content":"Autres"
         },
         {
             "locale": "en",
