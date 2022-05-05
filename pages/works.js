@@ -8,7 +8,7 @@ import webagency from '../public/images/siteshot/webagency.jpeg'
 import heroesloop from '../public/images/siteshot/heroesloop.jpeg'
 import spawnloop from '../public/images/siteshot/spawnloop.jpeg'
 import vscode from '../public/images/siteshot/vscode.jpeg'
-import placeholder from '../public/images/siteshot/placeholder.png'
+import main from '../public/images/siteshot/main.jpeg'
 import workPosts from '../public/locales/workPosts.json'
 import { useRouter } from "next/router"
 
@@ -26,7 +26,7 @@ const Works = () => {
 
                 <SimpleGrid columns={[1,1,2]} gap={6}>
                 <Section>
-                        <GridItem href="/" title="MyPortfolio" thumbnail={placeholder}> 
+                        <GridItem href="/" title="MyPortfolio" thumbnail={main}> 
                             {workPosts.MyPortfolio.filter(p => p.locale === locale).map((MyPortfolio) => {
                                 return MyPortfolio.content
                             })} 

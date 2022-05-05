@@ -50,7 +50,7 @@ const Voxel = () => {
             container.appendChild(renderer.domElement)
             setRenderer(renderer)
 
-            const scale = scH * 0.005 + 2
+            const scale = scH * 0.005 + 3.5
             const camera = new THREE.OrthographicCamera(-scale, scale, scale, -scale, 0.01,50000)
             camera.position.copy(initialCameraPosition)
             camera.lookAt(target)
