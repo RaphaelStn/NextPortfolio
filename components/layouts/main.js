@@ -12,6 +12,8 @@ const Main = ({children, router}) => {
                 <meta name="viewport" content="width-device-width, initial-scale=1"/>
                 <title>Raphaël Stacino</title>
                 <link rel ="shortcut icon" href ="./images/logoImg.png" type="image/x-icon"/>
+                <meta name="description" content="Raphaël Stacino - Web Developpment"></meta>
+                <meta name="author" content="Raphaël Stacino"></meta>
             </Head>
 
             <Navbar path={router.asPath}/>
