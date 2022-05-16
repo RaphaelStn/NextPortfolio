@@ -2,13 +2,14 @@ import { Container, Heading, SimpleGrid, Divider, useColorModeValue } from '@cha
 import Section from '../components/section'
 import Layout from "../components/layouts/article"
 import { GridItem } from '../components/grid-item'
-import whattodo from '../public/images/siteshot/whattodo.jpeg'
-import ireki from '../public/images/siteshot/wordpress.jpeg'
-import webagency from '../public/images/siteshot/webagency.jpeg'
-import heroesloop from '../public/images/siteshot/heroesloop.jpeg'
-import spawnloop from '../public/images/siteshot/spawnloop.jpeg'
-import vscode from '../public/images/siteshot/vscode.jpeg'
-import main from '../public/images/siteshot/main.jpeg'
+import whattodo from '../public/images/siteshot/whattodo.png'
+import ireki from '../public/images/siteshot/ireki.png'
+import webagency from '../public/images/siteshot/webagency.png'
+import heroesloop from '../public/images/siteshot/heroes.png'
+import spawnloop from '../public/images/siteshot/spawn.png'
+import vscode from '../public/images/siteshot/vs.png'
+import main from '../public/images/siteshot/main.png'
+import lily from '../public/images/siteshot/lily.png'
 import workPosts from '../public/locales/workPosts.json'
 import { useRouter } from "next/router"
 
@@ -25,7 +26,14 @@ const Works = () => {
                 </Heading>
 
                 <SimpleGrid columns={[1,1,2]} gap={6}>
-                <Section>
+                    <Section>
+                        <GridItem href="https://lilysworkshop.netlify.app" title="Lily's Workshop" thumbnail={lily}> 
+                            {workPosts.lily.filter(p => p.locale === locale).map((lily) => {
+                                return lily.content
+                            })} 
+                        </GridItem>
+                    </Section>
+                    <Section>
                         <GridItem href="/" title="MyPortfolio" thumbnail={main}> 
                             {workPosts.MyPortfolio.filter(p => p.locale === locale).map((MyPortfolio) => {
                                 return MyPortfolio.content

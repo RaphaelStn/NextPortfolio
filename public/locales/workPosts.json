@@ -88,5 +88,15 @@
             "locale": "en",
             "content":"Personal Projects"
         }
+    ],
+    "lily": [
+        {
+            "locale": "en",
+            "content": "Template website for wedding planer, build with Next.js and Tailwindcss"
+        },
+        {
+            "locale": "fr",
+            "content": "Site template pour wedding planer, fait à l'aide de Next.js et Tailwindcss"
+        }
     ]
 }

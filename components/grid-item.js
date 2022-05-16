@@ -24,6 +24,8 @@ export const GridItemStyle = () => (
     <Global 
     styles={`
     .grid-item-thumbnail {
+        border: 1px solid !important; 
+        border-color: rgba(81, 81, 81, 0.2) !important;
         border-radius:12px;
     }
     `}/>
