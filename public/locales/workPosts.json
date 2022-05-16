@@ -92,7 +92,7 @@
     "lily": [
         {
             "locale": "en",
-            "content": "Template website for wedding planer, build with Next.js and Tailwindcss"
+            "content": "Template website for wedding planer, built with Next.js and Tailwindcss"
         },
         {
             "locale": "fr",
