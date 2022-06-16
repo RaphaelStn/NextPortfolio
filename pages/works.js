@@ -41,28 +41,14 @@ const Works = () => {
                         </GridItem>
                     </Section>
                     <Section>
-                        <GridItem href="https://vscode.raphael-stacino.fr/?" title="Vscode Portfolio" thumbnail={vscode}> 
+                        <GridItem href="https://vscode.raphael-stacino.fr" title="Vscode Portfolio" thumbnail={vscode}> 
                             {workPosts.Vscode.filter(p => p.locale === locale).map((vscode) => {
                                 return vscode.content
                             })} 
                         </GridItem>
                     </Section>
-                    <Section>
-                        <GridItem href="https://whattodo.raphael-stacino.fr/?" title="WhatToDo" thumbnail={whattodo}> 
-                            {workPosts.Whattodo.filter(p => p.locale === locale).map((whattodo) => {
-                                return whattodo.content
-                            })} 
-                        </GridItem>
-                    </Section>
-                    <Section>
-                        <GridItem href="https://ireki.raphael-stacino.fr/?" title="Ireki" thumbnail={ireki}> 
-                            {workPosts.Ireki.filter(p => p.locale === locale).map((ireki) => {
-                                return ireki.content
-                            })} 
-                        </GridItem>
-                    </Section>
                     <Section delay={0.1}>
-                        <GridItem href="https://webagency.raphael-stacino.fr/?" title="WebAgency" thumbnail={webagency}> 
+                        <GridItem href="https://webagency.raphael-stacino.fr" title="WebAgency" thumbnail={webagency}> 
                             {workPosts.Webagency.filter(p => p.locale === locale).map((webagency) => {
                                 return webagency.content
                             })} 
@@ -80,14 +66,14 @@ const Works = () => {
                 </Section>
                 <SimpleGrid columns={[1,1,2]} gap={6}>  
                     <Section delay={0.2}>
-                        <GridItem href="https://heroesloop.raphael-stacino.fr/?" title="HeroesLoop" thumbnail={heroesloop}> 
+                        <GridItem href="https://heroes.raphael-stacino.fr" title="HeroesLoop" thumbnail={heroesloop}> 
                             {workPosts.Heroesloop.filter(p => p.locale === locale).map((heroesloop) => {
                                 return heroesloop.content
                             })} 
                         </GridItem>
                     </Section>
                     <Section delay={0.2}>
-                        <GridItem href="https://spawnloop.raphael-stacino.fr/?" title="SpawnLoop" thumbnail={spawnloop}> 
+                        <GridItem href="https://spawn.raphael-stacino.fr" title="SpawnLoop" thumbnail={spawnloop}> 
                             {workPosts.Spawnloop.filter(p => p.locale === locale).map((spawnloop) => {
                                 return spawnloop.content
                             })} 

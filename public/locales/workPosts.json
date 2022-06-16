@@ -12,33 +12,13 @@
     "Vscode": [
         {
             "locale": "fr",
-            "content":"Portfolio basé sur l'IDE Visual Studio Code. Crée à l'aide de PHP - Twig - Sass"
+            "content":"Portfolio basé sur l'IDE Visual Studio Code. Crée à l'aide de Next.js - Tailwindcss"
         },
         {
             "locale": "en",
-            "content":"Portfolio based on the IDE Visual Studio Code. Made with PHP - Twig - Sass"
+            "content":"Portfolio based on the IDE Visual Studio Code. Made with Next.js - Tailwindcss"
         }
     ],     
-    "Whattodo": [
-        {
-            "locale": "fr",
-            "content":"Simple site pour voir et choisir parmi les films et séries populaires récentes. Créé à l'aide de PHP - Twig - Sass"
-        },
-        {
-            "locale": "en",
-            "content":"Simple website to help see and choose between popular recent movies and shows. Made with PHP - Twig - Sass"
-        }
-    ],
-    "Ireki": [
-        {
-            "locale": "fr",
-            "content":"Site Wordpress"
-        },
-        {
-            "locale": "en",
-            "content":"Wordpress website"
-        }
-    ],
     "Webagency": [
         {
             "locale": "fr",
