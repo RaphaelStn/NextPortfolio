@@ -19,6 +19,8 @@ import { BioSection, BioYear } from "../components/bio"
 import { IoLogoLinkedin, IoMail, IoLogoGithub} from 'react-icons/io5'
 import indexPosts from "../public/locales/indexPosts.json"
 import { useRouter } from "next/router"
+import Typewriter from 'typewriter-effect';
+
 
 
 const Page = () => {
@@ -30,7 +32,19 @@ const Page = () => {
                 <Box display={{md:"flex"}}>
                     <Box flexGrow={1}>
                         <Heading as="h2" variant="page-title">
-                            Raphaël Stacino
+                            <Typewriter 
+                                onInit={(typewriter) => {
+                                    typewriter.typeString('Raphaël Stacino')
+                                    .pauseFor(2500)
+                                    .deleteAll()
+                                    .typeString('Développeur Web')
+                                    .pauseFor(75000)
+                                    .start()
+                                }}
+                                options={{
+                                    loop: true
+                                }}
+                            />
                         </Heading>
                     </Box>
                     <Box 

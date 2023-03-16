@@ -7,7 +7,7 @@ import Footer from '../footer'
 
 const Main = ({children, router}) => {
     return (
-        <Box as="main" pb={8}>
+        <Box as="main" pb={8}  minHeight="100vh">
             <Head>
                 <meta name="viewport" content="width-device-width, initial-scale=1"/>
                 <title>Raphaël Stacino</title>
