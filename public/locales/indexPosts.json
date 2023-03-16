@@ -76,11 +76,11 @@
     "love": [
         {
             "locale": "en", 
-            "content": "Art, Music, Games, Aquariums & Plants."
+            "content": "Chess, Art, Music, Games, Aquariums & Plants."
         },
         {
             "locale": "fr", 
-            "content": "Art, Musique, Jeux, Aquariums & Plantes"
+            "content": "Échec, Art, Musique, Jeux, Aquariums & Plantes"
         }
     ]
 }

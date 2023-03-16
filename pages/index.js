@@ -27,11 +27,6 @@ const Page = () => {
     return (
         <Layout>
             <Container>
-                <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3} mb={6} align="center">
-                    {indexPosts.intro.filter(p => p.locale === locale).map((intros) => {
-                           return intros.content
-                    })} 
-                </Box>
                 <Box display={{md:"flex"}}>
                     <Box flexGrow={1}>
                         <Heading as="h2" variant="page-title">
@@ -51,7 +46,7 @@ const Page = () => {
                         borderStyle="solid"
                         maxWidth="100px"
                         display="inline-block"
-                        src="/images/raphael.jpg"
+                        src="/images/Raphael.png"
                         alt="profile picture"/>
                     </Box>
                 </Box>
