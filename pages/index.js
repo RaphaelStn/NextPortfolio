@@ -117,10 +117,10 @@ const Page = () => {
                         Joueur d'échec, Musique, Jeux, Aquariums & Plantes
                     </Paragraph>
                 </Section>
-                <Heading as="h3" variant="section-title">
-                    Contacts
-                </Heading>
                 <Section>
+                    <Heading as="h3" variant="section-title">
+                        Contacts
+                    </Heading>
                     <List>
                         <ListItem>
                             <Link href="mailto:raphaelstacino@gmail.com">
