@@ -13,7 +13,7 @@ const Works = () => {
     return (
         <Layout>
             <Container>
-                <Heading as="h3" fontSize={20} mb={4}>
+                <Heading as="h3" variant="section-title" fontSize={20} mb={4}>
                     Projets
                 </Heading>
 
@@ -42,7 +42,7 @@ const Works = () => {
                 
                 <Section delay={0.2}>
                     <Divider my={6} bg={useColorModeValue('grey', '')}/>
-                    <Heading as="h3" fontSize={20} mb={4}>
+                    <Heading as="h3" fontSize={20} mb={4} variant="section-title">
                     Autres - Projets Perso
                     </Heading>
                 </Section>

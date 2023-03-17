@@ -59,22 +59,35 @@ const Page = () => {
                         alt="profile picture"/>
                     </Box>
                 </Box>
-                        <Section delay= {0.1}>
-                                
-                            <Heading as="h3" variant="section-title">
-                            À propos
-                            </Heading>
-                            <Paragraph>
-                            Développeur Fullstack situé près de Paris, vous pouvez visiter mon portfolio pour retrouver mes projets, chaque code source est disponible gratuitement sur GitHub.
-                            </Paragraph>
-                            <Box align="center" my={4}>
-                                <NextLink href="/works">
-                                    <Button rightIcon={<ChevronRightIcon/>} colorScheme="blue">
-                                        Portfolio
-                                    </Button>
-                                </NextLink>
-                            </Box>
-                        </Section>
+                <Section delay= {0.1}>
+                    <Heading as="h3" variant="section-title">
+                        À propos
+                    </Heading>
+                    <Paragraph>
+                        Développeur web situé en région Parisienne, vous pouvez visiter mon portfolio pour retrouver mes différents projets, chaque code source est disponible sur GitHub.
+                    </Paragraph>
+                    <Box align="center" my={4}>
+                        <NextLink href="/works">
+                            <Button rightIcon={<ChevronRightIcon/>} colorScheme="blue">
+                                Portfolio
+                            </Button>
+                        </NextLink>
+                    </Box>
+                </Section>
+                <Section delay={0.2}>
+                    <Heading as="h3" variant="section-title">
+                        Langages et frameworks utilisés
+                    </Heading>
+                    <Paragraph>
+                        Next - React - PHP - Vue - Node - Express
+                    </Paragraph>
+                    <Paragraph>
+                        MySQL - MongoDB
+                    </Paragraph>
+                    <Paragraph>
+                        Tailwindcss - ChakraUI - Sass
+                    </Paragraph>
+                </Section>
                 <Section delay={0.2}>
                     <Heading as="h3" variant="section-title">
                         Bio
@@ -85,32 +98,31 @@ const Page = () => {
                     </BioSection>
                     <BioSection>
                         <BioYear>2013</BioYear>
-                        Obtient le Baccalauréat Scientifique.
+                        Obtient le Baccalauréat Scientifique
                     </BioSection>
                     <BioSection>
                         <BioYear>2015</BioYear>
-                        Boucher 🥩 dans différentes boutiques au Havre et à Paris.
+                        Boucher 🥩 dans différentes boutiques au Havre et à Paris
                     </BioSection>
                     <BioSection>
                         <BioYear>2022</BioYear>
-                        Diplôme de développeur Web obtenu grâce à OpenClassrooms.
+                        Diplôme de développeur Web obtenu
                     </BioSection>
                 </Section>
                 <Section delay={0.3}>
                     <Heading as="h3" variant="section-title">
-                        I ♥ 
+                        Intérêts
                     </Heading>
                     <Paragraph>
-                        Échec, Art, Musique, Jeux, Aquariums & Plantes
+                        Joueur d'échec, Musique, Jeux, Aquariums & Plantes
                     </Paragraph>
                 </Section>
                 <Heading as="h3" variant="section-title">
                     Contacts
                 </Heading>
-
                 <Section>
                     <List>
-                    <ListItem>
+                        <ListItem>
                             <Link href="mailto:raphaelstacino@gmail.com">
                                 <Button
                                 variant="ghost"
