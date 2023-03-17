@@ -3,7 +3,6 @@ import {
     Box, 
     Heading, 
     Image, 
-    useColorModeValue, 
     Button, 
     Link, 
     List, 
@@ -17,15 +16,11 @@ import Section from "../components/section"
 import Paragraph from "../components/parapraph"
 import { BioSection, BioYear } from "../components/bio"
 import { IoLogoLinkedin, IoMail, IoLogoGithub} from 'react-icons/io5'
-import indexPosts from "../public/locales/indexPosts.json"
-import { useRouter } from "next/router"
 import Typewriter from 'typewriter-effect';
 
 
 
 const Page = () => {
-    const { locale } = useRouter()
-    console.log({locale})
     return (
         <Layout>
             <Container>
@@ -64,15 +59,13 @@ const Page = () => {
                         alt="profile picture"/>
                     </Box>
                 </Box>
-                {indexPosts.work.filter(p => p.locale === locale).map((works) => {
-                    return (
                         <Section delay= {0.1}>
                                 
                             <Heading as="h3" variant="section-title">
-                                {works.title}
+                            À propos
                             </Heading>
                             <Paragraph>
-                                {works.content}
+                            Développeur Fullstack situé près de Paris, vous pouvez visiter mon portfolio pour retrouver mes projets, chaque code source est disponible gratuitement sur GitHub.
                             </Paragraph>
                             <Box align="center" my={4}>
                                 <NextLink href="/works">
@@ -82,41 +75,25 @@ const Page = () => {
                                 </NextLink>
                             </Box>
                         </Section>
-                    )
-                })} 
                 <Section delay={0.2}>
                     <Heading as="h3" variant="section-title">
                         Bio
                     </Heading>
                     <BioSection>
                         <BioYear>1994</BioYear>
-                        {indexPosts.bio.filter(p => p.locale === locale && p.title === '1994').map((bios) => {
-                           return bios.content
-                        })} 
+                        Né à Enghien-Les-Bains, France
                     </BioSection>
                     <BioSection>
                         <BioYear>2013</BioYear>
-                        {indexPosts.bio.filter(p => p.locale === locale && p.title === '2013').map((bios) => {
-                           return bios.content
-                        })} 
+                        Obtient le Baccalauréat Scientifique.
                     </BioSection>
                     <BioSection>
                         <BioYear>2015</BioYear>
-                        {indexPosts.bio.filter(p => p.locale === locale && p.title === '2015').map((bios) => {
-                           return bios.content
-                        })} 
+                        Boucher 🥩 dans différentes boutiques au Havre et à Paris.
                     </BioSection>
                     <BioSection>
                         <BioYear>2022</BioYear>
-                        {indexPosts.bio.filter(p => p.locale === locale && p.title === '2022.1').map((bios) => {
-                           return bios.content
-                        })} 
-                    </BioSection>
-                    <BioSection>
-                        <BioYear>2022</BioYear>
-                        {indexPosts.bio.filter(p => p.locale === locale && p.title === '2022.2').map((bios) => {
-                           return bios.content
-                        })} 
+                        Diplôme de développeur Web obtenu grâce à OpenClassrooms.
                     </BioSection>
                 </Section>
                 <Section delay={0.3}>
@@ -124,9 +101,7 @@ const Page = () => {
                         I ♥ 
                     </Heading>
                     <Paragraph>
-                    {indexPosts.love.filter(p => p.locale === locale).map((loves) => {
-                           return loves.content
-                    })} 
+                        Échec, Art, Musique, Jeux, Aquariums & Plantes
                     </Paragraph>
                 </Section>
                 <Heading as="h3" variant="section-title">
