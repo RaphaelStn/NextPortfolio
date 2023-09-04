@@ -106,7 +106,7 @@ const Page = () => {
                     </BioSection>
                     <BioSection>
                         <BioYear>2022</BioYear>
-                        Diplôme de développeur Web obtenu
+                        Reconversion dans le développement web
                     </BioSection>
                 </Section>
                 <Section delay={0.3}>
