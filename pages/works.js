@@ -19,9 +19,11 @@ const Works = () => {
 
                 <SimpleGrid columns={[1,1,2]} gap={6}>
                     <Section>
-                    <GridItem href="https://github.com/RaphaelStn/DiscordBotMusic.netlify.app" title="DiscordBot" thumbnail={discordBot}> 
+                    <GridItem href="https://github.com/RaphaelStn/DiscordBotMusic" title="DiscordBot" thumbnail={discordBot}> 
                         Un bot musical pour discord, utilisant node.js
                         </GridItem>
+                    </Section>
+                    <Section>
                         <GridItem href="https://lilysworkshop.netlify.app" title="Lily's Workshop" thumbnail={lily}> 
                         Site pour Wedding planer, fait à l'aide de Next.js - Tailwindcss
                         </GridItem>
